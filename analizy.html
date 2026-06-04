@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>Анализы — Афина</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ *{box-sizing:border-box;}
+ html,body{margin:0;}
+ body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:#f4f6f8;color:#1f2733;line-height:1.55;}
+ .topbar{background:#1f2733;position:sticky;top:0;z-index:50;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+ .navinner{max-width:900px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+ .navinner::-webkit-scrollbar{display:none;}
+ .navinner a{color:#cfe3ff;text-decoration:none;font-size:13px;padding:13px 12px;flex:0 0 auto;border-bottom:3px solid transparent;}
+ .navinner a:hover{background:#2c3845;color:#fff;}
+ .navinner a.active{color:#fff;font-weight:600;border-bottom-color:#4da3ff;background:#2c3845;}
+ .container{max-width:900px;margin:0 auto;padding:22px 18px 70px;}
+ h1{font-size:24px;border-bottom:2px solid #2b2b2b;padding-bottom:6px;margin:6px 0 14px;}
+ h2{font-size:17px;margin-top:1.4em;border-bottom:1px solid #ddd;padding-bottom:3px;}
+ table{border-collapse:collapse;width:100%;margin:.7em 0;font-size:13.5px;background:#fff;}
+ th,td{border:1px solid #cfd6dd;padding:6px 9px;text-align:left;vertical-align:top;}
+ th{background:#eef0f2;}
+ blockquote{border-left:4px solid #ccc;margin:.7em 0;padding:6px 14px;color:#555;background:#fff;}
+ ul,ol{padding-left:1.4em;}
+ a{color:#0a7d3c;}
+ .sub{color:#6b7785;font-size:14px;margin:2px 0 20px;}
+ .warnbox{background:#fff4e5;border:1px solid #f0c89a;border-radius:10px;padding:10px 14px;font-size:13px;color:#6b4a1f;margin:.9em 0}
+ .foot{margin-top:16px;font-size:11.5px;color:#8a94a0}
+ .good{color:#1e8449}.bad{color:#c0392b;font-weight:700}.warn{color:#b9770e;font-weight:600}
+ tr.flag td{background:#fff6f5}
+</style>
+</head><body>
+<div class="topbar"><div class="navinner">
+  <a href="index.html">Обзор</a>
+  <a href="istoriya.html">История</a>
+  <a href="analizy.html">Анализы</a>
+  <a href="razbor.html">Разбор и риски</a>
+  <a href="voprosy.html">Вопросы врачам</a>
+</div></div>
+<main class="container">
+<script>
+(function(){var p=(location.pathname.split('/').pop()||'index.html');if(!p)p='index.html';
+document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('href')===p){a.classList.add('active');}});})();
+</script>
+
+<h1>Анализы — сводка и динамика — Афина</h1>
+<div class="sub">Значения перенесены из загруженных бланков. Это перенос данных, не врачебная интерпретация — трактовка за педиатром / детским неврологом.</div>
+
+<h2>ЭЛИ-Н-Тест — IgG-аутоантитела к нейроантигенам (02.06.2026)</h2>
+<p>Лаборатория Хеликс / Immunculus. Референс для всех показателей: <b>от −15 до +10 у.е.</b> Выше +10 — возможный маркер изменений тканей; ниже −15 — возможный маркер хронических процессов либо регресса воспаления.</p>
+<table>
+  <tr><th>Показатель (IgG к…)</th><th>Результат</th><th>Норма</th><th>Статус</th></tr>
+  <tr><td>NF-200 (аксоны)</td><td>14 ↑</td><td>−15…+10</td><td class="bad">повышен</td></tr>
+  <tr><td>глиальному фибриллярному кислому белку (GFAP)</td><td>23 ↑</td><td>−15…+10</td><td class="bad">повышен</td></tr>
+  <tr><td>S100B</td><td>5</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>общему белку миелина</td><td>−4</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>вольтажзависимым кальциевым каналам</td><td>−3</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>Н-холиновым рецепторам</td><td>−6</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr class="flag"><td><b>глутаматным рецепторам</b></td><td><b>113 ↑</b></td><td>−15…+10</td><td class="bad">резко повышен</td></tr>
+  <tr><td>ГАМК-рецепторам</td><td>−13</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>дофаминовым рецепторам</td><td>3</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>серотониновым рецепторам</td><td>−2</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>опиатным рецепторам</td><td>8</td><td>−15…+10</td><td class="good">норма</td></tr>
+  <tr><td>бета-эндорфину</td><td>−18 ↓</td><td>−15…+10</td><td class="warn">ниже нормы</td></tr>
+</table>
+<p><b>Отклонения:</b> глутаматные рецепторы 113 (резко выше), GFAP 23 и NF-200 14 (умеренно выше), бета-эндорфин −18 (немного ниже). Остальные 8 — в норме.</p>
+<div class="warnbox">⚠️ <b>Важно про метод.</b> ЭЛИ-Тест (Immunculus, методика А.Б. Полетаева) не входит в международную доказательную медицину и не имеет независимой клинической валидации. Цифры, включая «113», <b>нельзя трактовать как диагноз или повод для лечения.</b> Подробно — на странице <a href="razbor.html">«Разбор и риски»</a>.</div>
+
+<h2>Аминокислоты крови, 13 показателей (30.05.2026)</h2>
+<p>Лаборатория Хеликс, метод ВЭЖХ-МС/МС. Референс с учётом возраста и пола.</p>
+<table>
+  <tr><th>Аминокислота</th><th>Результат</th><th>Норма</th><th>Статус</th></tr>
+  <tr><td>Аргинин (ARG)</td><td>96.70</td><td>21.4–113.1</td><td class="good">норма</td></tr>
+  <tr><td>Валин (VAL)</td><td>226.50</td><td>152.1–443.0</td><td class="good">норма</td></tr>
+  <tr><td>Метионин (MET)</td><td>20.29</td><td>13.8–32.6</td><td class="good">норма</td></tr>
+  <tr><td>Лейцин (LEU)</td><td>73.90</td><td>70.0–163.2</td><td class="good">норма (нижний край)</td></tr>
+  <tr><td>Фенилаланин (PHE)</td><td>46.64</td><td>33.9–82.8</td><td class="good">норма</td></tr>
+  <tr><td>Аланин (ALA)</td><td>243.00</td><td>173.9–523.7</td><td class="good">норма</td></tr>
+  <tr><td>Аспарагиновая к-та (ASP)</td><td>&lt;8.87</td><td>0–11.4</td><td class="good">норма</td></tr>
+  <tr><td>Глицин (GLY)</td><td>204.30</td><td>121.1–397.8</td><td class="good">норма</td></tr>
+  <tr><td>Глутаминовая к-та (GLU)</td><td>&lt;40.00 ↓</td><td>40.0–99.0</td><td class="warn">ниже нормы (погранично)</td></tr>
+  <tr><td>Пролин (PRO)</td><td>165.30</td><td>90.0–267.0</td><td class="good">норма</td></tr>
+  <tr><td>Тирозин (TYR)</td><td>48.60</td><td>32.2–104.5</td><td class="good">норма</td></tr>
+  <tr><td>Орнитин (ORN)</td><td>67.90</td><td>26.3–121.5</td><td class="good">норма</td></tr>
+  <tr><td>Цитруллин (CIT)</td><td>26.78</td><td>21.4–48.8</td><td class="good">норма</td></tr>
+</table>
+<p>12 из 13 в норме; погранично снижена только глутаминовая кислота (заменимая, лабильный и неспецифичный показатель). Картины наследственных болезней обмена нет.</p>
+
+<h2>Пока не сдавалось (было бы информативнее для 9 лет)</h2>
+<p>Рост/вес по перцентилям, ОАК, ферритин, витамин D (25-OH), B12, <b>ТТГ + Т4 свободный + анти-ТПО</b> (гипотиреоз — излечимая причина когнитивных нарушений; у матери аутоиммунный тиреоидит — семейная предрасположенность).</p>
+
+<div class="foot">Перенос лабораторных данных для отслеживания, не диагноз. Трактовка — за лечащим врачом.</div>
+
+</main>
+</body></html>

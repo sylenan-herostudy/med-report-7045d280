@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>Вопросы врачам — Афина</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ *{box-sizing:border-box;}
+ html,body{margin:0;}
+ body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:#f4f6f8;color:#1f2733;line-height:1.55;}
+ .topbar{background:#1f2733;position:sticky;top:0;z-index:50;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+ .navinner{max-width:900px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+ .navinner::-webkit-scrollbar{display:none;}
+ .navinner a{color:#cfe3ff;text-decoration:none;font-size:13px;padding:13px 12px;flex:0 0 auto;border-bottom:3px solid transparent;}
+ .navinner a:hover{background:#2c3845;color:#fff;}
+ .navinner a.active{color:#fff;font-weight:600;border-bottom-color:#4da3ff;background:#2c3845;}
+ .container{max-width:900px;margin:0 auto;padding:22px 18px 70px;}
+ h1{font-size:24px;border-bottom:2px solid #2b2b2b;padding-bottom:6px;margin:6px 0 14px;}
+ h2{font-size:17px;margin-top:1.4em;border-bottom:1px solid #ddd;padding-bottom:3px;}
+ a{color:#0a7d3c;}
+ .sub{color:#6b7785;font-size:14px;margin:2px 0 20px;}
+ ul.task-list{list-style:none;padding-left:.2em}
+ ul.task-list li{margin:.4em 0;display:flex;gap:.55em;align-items:flex-start}
+ ul.task-list li input[type=checkbox]{margin-top:.35em;width:.95em;height:.95em;flex:0 0 auto}
+ .foot{margin-top:16px;font-size:11.5px;color:#8a94a0}
+</style>
+</head><body>
+<div class="topbar"><div class="navinner">
+  <a href="index.html">Обзор</a>
+  <a href="istoriya.html">История</a>
+  <a href="analizy.html">Анализы</a>
+  <a href="razbor.html">Разбор и риски</a>
+  <a href="voprosy.html">Вопросы врачам</a>
+</div></div>
+<main class="container">
+<script>
+(function(){var p=(location.pathname.split('/').pop()||'index.html');if(!p)p='index.html';
+document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('href')===p){a.classList.add('active');}});})();
+</script>
+
+<h1>Вопросы врачам — Афина</h1>
+<div class="sub">Список вопросов на приёмы, собран из разбора анализов. Отмечай галочкой заданные; ответы переноси в раздел «Отвечено».</div>
+
+<h2>Детскому неврологу</h2>
+<ul class="task-list">
+  <li><input type="checkbox"><span>Задержка стабильная с раннего возраста или есть признаки регресса (утрата ранее приобретённых навыков, особенно речи)?</span></li>
+  <li><input type="checkbox"><span>Нужны ли МРТ головного мозга и ЭЭГ?</span></li>
+  <li><input type="checkbox"><span>Стоит ли вообще ориентироваться на ЭЛИ-Н-Тест? Есть ли у него доказательная ценность?</span></li>
+  <li><input type="checkbox"><span>Есть ли основания подозревать аутоиммунный процесс — и если да, какие валидированные тесты нужны (а не ЭЛИ-Тест)?</span></li>
+</ul>
+
+<h2>Генетику</h2>
+<ul class="task-list">
+  <li><input type="checkbox"><span>Показан ли хромосомный микроматричный анализ (CMA) и тест на синдром ломкой X-хромосомы?</span></li>
+</ul>
+
+<h2>Педиатру</h2>
+<ul class="task-list">
+  <li><input type="checkbox"><span>Проверены ли слух и зрение?</span></li>
+  <li><input type="checkbox"><span>Сданы ли ТТГ и Т4 свободный (щитовидная железа), ферритин/железо, витамин D, B12?</span></li>
+</ul>
+
+<h2>По семейному анамнезу (у матери аутоиммунный тиреоидит и гипотиреоз)</h2>
+<ul class="task-list">
+  <li><input type="checkbox"><span>Проверить щитовидную железу Афины — ТТГ, Т4 свободный, анти-ТПО (семейная предрасположенность)?</span></li>
+  <li><input type="checkbox"><span>Был ли известен и контролировался ли тиреоидный статус матери во время беременности? Мог ли он повлиять на развитие?</span></li>
+</ul>
+
+<h2>Центру, который назначил тесты (Вожаков / A-Medical)</h2>
+<ul class="task-list">
+  <li><input type="checkbox"><span>На основании чего назначен ЭЛИ-Н-Тест и что предлагается делать с результатом?</span></li>
+  <li><input type="checkbox"><span>Планируется ли лечение по этим цифрам? С какой доказательной базой?</span></li>
+</ul>
+
+<h2>Отвечено</h2>
+<p>Переносить сюда заданные вопросы вместе с ответом:</p>
+<ul>
+  <li><b>В:</b> <em>вопрос</em> &nbsp; <b>О:</b> <em>ответ</em> (врач, дата)</li>
+</ul>
+
+<div class="foot">Список информационный, подготовлен по загруженным анализам. Финальные решения — за лечащим врачом.</div>
+
+</main>
+</body></html>

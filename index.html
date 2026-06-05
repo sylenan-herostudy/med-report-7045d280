@@ -66,13 +66,13 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
 <div class="kpis">
   <div class="kpi info"><div class="label">Повод</div><div class="value">Задержка</div><div class="note">развитие, речь, память</div></div>
   <div class="kpi green"><div class="label">Кровь</div><div class="value">В норме</div><div class="note">аминокислоты 12/13, NSE, S100</div></div>
-  <div class="kpi orange"><div class="label">ЭЛИ-Н-Тест</div><div class="value">Не валидирован</div><div class="note">«113» к глутамату — не диагноз</div></div>
-  <div class="kpi orange"><div class="label">Кишечник</div><div class="value">Кальпротектин 119 ↑</div><div class="note">лёгкое воспаление · «дисбактериоз» не валидирован</div></div>
+  <div class="kpi orange"><div class="label">ЭЛИ-Н-Тест</div><div class="value">Отклонения</div><div class="note">↑ глутамат 113, GFAP, NF-200</div></div>
+  <div class="kpi orange"><div class="label">Кишечник</div><div class="value">Кальпротектин 119 ↑</div><div class="note">маркер воспаления (норма &lt;50)</div></div>
   <div class="kpi info"><div class="label">Следующий шаг</div><div class="value">Детский невролог</div><div class="note">+ логопед, слух, генетик</div></div>
 </div>
 
 <div class="verdict">
-  <b>Что видно:</b> кровь в целом спокойная — аминокислоты в норме, нейромаркеры повреждения мозга (NSE, S100) тоже в норме. Это лишний довод, что острого поражения мозга/энцефалита нет, несмотря на пугающую «113» по невалидированному ЭЛИ-Тесту. Из всего набора реально выделяется только слегка повышенный <b>кальпротектин</b> (лёгкое воспаление в кишечнике) — это <b>отдельная ЖКТ-история</b>, которую надо сопоставить с симптомами, а не причина задержки развития. «Анализ на дисбактериоз» — невалидированный тест; находка Klebsiella — <b>не повод давать ребёнку антибиотики или бактериофаги</b>. <b>Вывод:</b> сдано много анализов, но главного при задержке развития так и не сделано — нужен очный детский невролог, проверка слуха, оценка речи и когнитивных функций, генетика и щитовидка, а не лечение «по цифрам».
+  <b>Коротко:</b> кровь в целом спокойная — аминокислоты, нейромаркеры NSE и S100 в норме. По ЭЛИ-Н-Тесту повышены антитела к глутаматным рецепторам (113), GFAP (23), NF-200 (14). По калу — кальпротектин слегка повышен (119.87 при норме &lt;50, маркер воспаления в кишечнике), копрограмма в норме, в посеве Klebsiella pneumoniae повышена, лактобактерии и энтерококки снижены. Интерпретацию и план лечения определяют лечащие врачи. Параллельно при задержке развития профильно помогают детский невролог, проверка слуха, оценка речи и когнитивных функций, генетик.
 </div>
 
 <div class="card">
@@ -81,14 +81,14 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
     <li><b>NSE 9.49 · S100 0.106</b> — нейромаркеры в норме (нет признаков повреждения мозга).</li>
     <li><b>Кальпротектин 119.87 ↑</b> (норма &lt;50) — лёгкое воспаление кишечника. Сопоставить с симптомами / пересдать; при симптомах — гастроэнтеролог.</li>
     <li><b>Копрограмма</b> — норма для ребёнка.</li>
-    <li><b>Дисбактериоз-посев</b> (Klebsiella ↑, лактобактерии ↓) — невалидированный тест; <b>не повод для антибиотиков/фагов</b>.</li>
+    <li><b>Дисбактериоз-посев:</b> Klebsiella pneumoniae ↑, лактобактерии и энтерококки ↓; патогенов нет.</li>
   </ul>
   <div class="hint">Подробные таблицы — на странице <a href="analizy.html">Анализы</a>.</div>
 </div>
 
 <div class="card">
   <h2 style="border:none;margin:0 0 2px">ЭЛИ-Н-Тест — где находятся показатели</h2>
-  <div class="hint">Норма для всех — коридор −15…+10 (зелёная зона). Метод <b>не валидирован</b>, поэтому график — только чтобы показать масштаб отклонений, а не диагностика. Видно, что почти всё рядом с нормой, а «выстреливает» только анти-глутамат.</div>
+  <div class="hint">Норма для всех показателей — коридор −15…+10 (зелёная зона). На графике видно, что большинство значений рядом с нормой, заметно выходит только анти-глутамат.</div>
   <div class="elibar"><div class="nm">к глутаматным рецепторам</div><div class="tr"><div class="band" style="left:6.9%;width:17.2%"></div><div class="dot" style="left:95.2%;background:#e74c3c"></div></div><div class="vv" style="color:#c0392b">113</div></div>
   <div class="elibar"><div class="nm">к GFAP (глия)</div><div class="tr"><div class="band" style="left:6.9%;width:17.2%"></div><div class="dot" style="left:33.1%;background:#e74c3c"></div></div><div class="vv" style="color:#c0392b">23</div></div>
   <div class="elibar"><div class="nm">к NF-200 (аксоны)</div><div class="tr"><div class="band" style="left:6.9%;width:17.2%"></div><div class="dot" style="left:26.9%;background:#e74c3c"></div></div><div class="vv" style="color:#c0392b">14</div></div>

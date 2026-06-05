@@ -23,21 +23,21 @@
 </style>
 </head><body>
 <div class="topbar"><div class="navinner">
-  <a href="index.html">Дашборд</a>
-  <a href="istoriya.html">История</a>
-  <a href="analizy.html">Анализы</a>
-  <a href="proverka.html">Проверка назначений</a>
-  <a href="nezavisimyy.html">Разбор лечения</a>
-  <a href="razbor-bad.html">Разбор БАД</a>
-  <a href="lekarstva.html">Лекарства</a>
-  <a href="grafik.html">График приёма</a>
-  <a href="rekomendacii.html">Рекомендации</a>
-  <a href="voprosy.html">Вопросы врачам</a>
+  <a href="./">Дашборд</a>
+  <a href="istoriya">История</a>
+  <a href="analizy">Анализы</a>
+  <a href="proverka">Проверка назначений</a>
+  <a href="nezavisimyy">Разбор лечения</a>
+  <a href="razbor-bad">Разбор БАД</a>
+  <a href="lekarstva">Лекарства</a>
+  <a href="grafik">График приёма</a>
+  <a href="rekomendacii">Рекомендации</a>
+  <a href="voprosy">Вопросы врачам</a>
 </div></div>
 <main class="container">
 <script>
-(function(){var p=(location.pathname.split('/').pop()||'index.html');if(!p)p='index.html';
-document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('href')===p){a.classList.add('active');}});})();
+(function(){var seg=(location.pathname.split('/').pop()||'').replace(/\.html$/,'');if(seg===''||seg==='index')seg='__home';
+document.querySelectorAll('.navinner a').forEach(function(a){var h=(a.getAttribute('href')||'').replace(/\.html$/,'').replace(/^\.?\//,'').replace(/\/$/,'');if(h===''||h==='index')h='__home';if(h===seg)a.classList.add('active');});})();
 </script>
 
 <h1>Обследование: что сдано и маршрут — Афина</h1>
@@ -56,7 +56,7 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
   <li><b>Копрограмма</b> — в норме для ребёнка.</li>
   <li><b>Посев (дисбактериоз):</b> Klebsiella pneumoniae 10⁶, лактобактерии и энтерококки снижены; патогенов нет.</li>
 </ul>
-<p>Подробные таблицы — на странице <a href="analizy.html">Анализы</a>. Трактовку проводит лечащий врач.</p>
+<p>Подробные таблицы — на странице <a href="analizy">Анализы</a>. Трактовку проводит лечащий врач.</p>
 
 <h2>Семейный анамнез</h2>
 <p>У матери — аутоиммунный тиреоидит и гипотиреоз. Отсюда два полезных вопроса к врачам: проверить щитовидную железу у самой Афины (ТТГ, Т4 свободный, анти-ТПО) и уточнить тиреоидный статус матери во время беременности.</p>
@@ -73,7 +73,7 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
 
 <div class="note"><b>Полезно уточнить у врача:</b> задержка стабильная с раннего возраста или есть признаки регресса (утрата ранее приобретённых навыков, особенно речи) — это влияет на тактику и набор обследований.</div>
 
-<p>Готовый список вопросов врачам — на странице <a href="voprosy.html">«Вопросы врачам»</a>.</p>
+<p>Готовый список вопросов врачам — на странице <a href="voprosy">«Вопросы врачам»</a>.</p>
 
 <div class="foot">Информационная сводка по загруженным материалам. Интерпретацию и решения принимает лечащий врач.</div>
 

@@ -44,21 +44,21 @@
 </style>
 </head><body>
 <div class="topbar"><div class="navinner">
-  <a href="index.html">Дашборд</a>
-  <a href="istoriya.html">История</a>
-  <a href="analizy.html">Анализы</a>
-  <a href="proverka.html">Проверка назначений</a>
-  <a href="nezavisimyy.html">Разбор лечения</a>
-  <a href="razbor-bad.html">Разбор БАД</a>
-  <a href="lekarstva.html">Лекарства</a>
-  <a href="grafik.html">График приёма</a>
-  <a href="rekomendacii.html">Рекомендации</a>
-  <a href="voprosy.html">Вопросы врачам</a>
+  <a href="./">Дашборд</a>
+  <a href="istoriya">История</a>
+  <a href="analizy">Анализы</a>
+  <a href="proverka">Проверка назначений</a>
+  <a href="nezavisimyy">Разбор лечения</a>
+  <a href="razbor-bad">Разбор БАД</a>
+  <a href="lekarstva">Лекарства</a>
+  <a href="grafik">График приёма</a>
+  <a href="rekomendacii">Рекомендации</a>
+  <a href="voprosy">Вопросы врачам</a>
 </div></div>
 <main class="container">
 <script>
-(function(){var p=(location.pathname.split('/').pop()||'index.html');if(!p)p='index.html';
-document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('href')===p){a.classList.add('active');}});})();
+(function(){var seg=(location.pathname.split('/').pop()||'').replace(/\.html$/,'');if(seg===''||seg==='index')seg='__home';
+document.querySelectorAll('.navinner a').forEach(function(a){var h=(a.getAttribute('href')||'').replace(/\.html$/,'').replace(/^\.?\//,'').replace(/\/$/,'');if(h===''||h==='index')h='__home';if(h===seg)a.classList.add('active');});})();
 </script>
 
 <h1>Афина — обзор</h1>
@@ -84,7 +84,7 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
     <li><b>Копрограмма</b> — норма для ребёнка.</li>
     <li><b>Дисбактериоз-посев:</b> Klebsiella pneumoniae ↑, лактобактерии и энтерококки ↓; патогенов нет.</li>
   </ul>
-  <div class="hint">Подробные таблицы — на странице <a href="analizy.html">Анализы</a>.</div>
+  <div class="hint">Подробные таблицы — на странице <a href="analizy">Анализы</a>.</div>
 </div>
 
 <div class="card">
@@ -115,7 +115,7 @@ document.querySelectorAll('.navinner a').forEach(function(a){if(a.getAttribute('
     <tr><td>ТТГ, Т4 свободный, анти-ТПО, ферритин, витамин D, B12</td><td>излечимые причины; щитовидка тем более при семейном анамнезе</td></tr>
     <tr><td>Генетик (микроматричный анализ + ломкая X)</td><td>стандарт первой линии при необъяснимой задержке развития</td></tr>
   </table>
-  <div class="hint">Ключевой вопрос, определяющий тактику: задержка стабильная с раннего возраста или был <b>регресс</b> (утрата ранее приобретённых навыков). Подробнее — на странице <a href="nezavisimyy.html">Разбор и риски</a>.</div>
+  <div class="hint">Ключевой вопрос, определяющий тактику: задержка стабильная с раннего возраста или был <b>регресс</b> (утрата ранее приобретённых навыков). Подробнее — на странице <a href="nezavisimyy">Разбор и риски</a>.</div>
 </div>
 
 <div class="foot">Информационная страница по двум загруженным анализам. Не диагноз и не назначение. Решения принимает детский невролог / педиатр / генетик.</div>

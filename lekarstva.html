@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"><title>Лекарства — Афина</title>
+<html lang="ru"><head><meta charset="utf-8"><title>План лечения и стоимость — Афина</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
@@ -13,10 +13,17 @@
  .navinner a.active{color:#fff;font-weight:600;border-bottom-color:#4da3ff;background:#2c3845;}
  .container{max-width:900px;margin:0 auto;padding:22px 18px 70px;}
  h1{font-size:24px;border-bottom:2px solid #2b2b2b;padding-bottom:6px;margin:6px 0 14px;}
+ h2{font-size:17px;margin-top:1.4em;border-bottom:1px solid #ddd;padding-bottom:3px;}
+ table{border-collapse:collapse;width:100%;margin:.7em 0;font-size:13px;background:#fff;}
+ th,td{border:1px solid #cfd6dd;padding:6px 9px;text-align:left;vertical-align:top;}
+ th{background:#eef0f2;}
  a{color:#0a7d3c;}
- .sub{color:#6b7785;font-size:14px;margin:2px 0 20px;}
- .note{background:#fff;border-radius:12px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08);font-size:14px}
- .note .tag{display:inline-block;background:#eef0f2;color:#515b68;font-size:11px;text-transform:uppercase;letter-spacing:.3px;padding:3px 8px;border-radius:20px;margin-bottom:8px}
+ .sub{color:#6b7785;font-size:14px;margin:2px 0 16px;}
+ .goal{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:14px 18px;font-size:13.5px;margin:0 0 16px}
+ .total{background:#eef7ee;border:1px solid #bfe0bf;border-left:5px solid #27ae60;border-radius:12px;padding:14px 18px;margin:14px 0;font-size:14px}
+ .total b{color:#1e7a3c}
+ .num{text-align:right;white-space:nowrap}
+ .dis{font-size:12px;color:#8a94a0;margin-top:8px}
  .foot{margin-top:16px;font-size:11.5px;color:#8a94a0}
 </style>
 </head><body>
@@ -38,13 +45,54 @@
 document.querySelectorAll('.navinner a').forEach(function(a){var h=(a.getAttribute('href')||'').replace(/\.html$/,'').replace(/^\.?\//,'').replace(/\/$/,'');if(h===''||h==='index')h='__home';if(h===seg)a.classList.add('active');});})();
 </script>
 
-<h1>Лекарства и приём — Афина</h1>
-<div class="sub">Актуальный список препаратов: что, дозировка, как принимать, до какого числа.</div>
+<h1>План биомедицинской коррекции — 4 месяца</h1>
+<div class="sub">Назначен центром (Вожаков / A-Medical). Схема приёма по времени — на странице <a href="grafik">График приёма</a>. Дозы, длительность и решения — за лечащим врачом.</div>
 
-<div class="note">
-  <span class="tag">Пока пусто</span>
-  <p>Лекарственных назначений пока нет — Афина на этапе диагностики. Раздел заполнится, когда будет назначена терапия.</p>
-</div>
+<div class="goal"><b>Цель программы:</b> уменьшение активности хронического нейровоспаления, снижение инфекционной и токсической нагрузки, восстановление оси «кишечник–мозг», коррекция дефицитов, улучшение нейропластичности и баланса возбуждения/торможения в ЦНС.</div>
 
-<div class="foot">Информационная страница. Не диагноз. Решения — лечащий врач.</div>
-</main></body></html>
+<div class="total"><b>Ориентировочная стоимость в Алматы за 4 месяца: ~300 000 – 400 000 ₸.</b> Это оценка: точные суммы зависят от дозировок, числа упаковок и наличия; цены программ «Паразитов нет» / «Дефицитов нет» — у администратора центра. Детальный расчёт — ниже.</div>
+
+<h2>Этап 1 — противовирусная и подготовительная терапия (1 месяц)</h2>
+<table>
+  <tr><th>Препарат</th><th>Схема</th><th>Длительность</th></tr>
+  <tr><td><b>Генферон Лайт 250 000 ЕД</b>, рект. свечи</td><td>дни 1–10 — 1 свеча утром + 1 вечером ежедневно; далее 21 день — 1 свеча утром + 1 вечером 3 раза/нед (Пн, Ср, Пт)</td><td>1 месяц</td></tr>
+  <tr><td><b>Отофаг-гель</b></td><td>на слизистую носовых ходов, 3 раза/день</td><td>1 месяц</td></tr>
+  <tr><td><b>Фагодент-гель</b></td><td>на слизистую ротоглотки, 3 раза/день</td><td>1 месяц</td></tr>
+  <tr><td><b>Программа «Паразитов нет»</b> (детская, Аврора)</td><td>по схеме программы; заказ у администратора</td><td>21 день</td></tr>
+</table>
+
+<h2>Этап 2 — восстановительная программа (3 месяца)</h2>
+<table>
+  <tr><th>Препарат</th><th>Схема</th><th>Длительность</th></tr>
+  <tr><td><b>Программа «Дефицитов нет»</b> (Аврора)</td><td>по схеме программы; заказ у администратора</td><td>3 месяца</td></tr>
+  <tr><td><b>Мио-Инозитол Аврора</b> (мио-инозитол, таурин, цитруллин)</td><td>по инструкции производителя</td><td>3 месяца</td></tr>
+  <tr><td><b>Глиалия</b> (Италия; PEA + лютеолин)</td><td>1 таб. утром с завтраком + 1 таб. вечером с ужином</td><td>3 месяца</td></tr>
+  <tr><td><b>ГАМК (GABA) Solgar 500 мг</b></td><td>500 мг утром + 500 мг вечером (1000 мг/сут)</td><td>3 месяца</td></tr>
+  <tr><td><b>Карнитин Аврора</b></td><td>1 ч. ложка утром + 1 ч. ложка вечером</td><td>3 месяца</td></tr>
+  <tr><td><b>Магний Плюс</b></td><td>1 мерная ложка вечером перед сном, в стакане воды</td><td>3 месяца</td></tr>
+  <tr><td><b>В-комплекс</b></td><td>по схеме; заказ у администратора</td><td>3 месяца</td></tr>
+</table>
+
+<h2>Стоимость в Алматы — детальный расчёт</h2>
+<p style="font-size:13px;color:#515b68">Цены — из казахстанских аптек и каталога Аврора (июнь 2026), ориентировочные. Количество упаковок рассчитано под длительность курса; зависит от точной дозировки.</p>
+<table>
+  <tr><th>Позиция</th><th>Цена за упаковку</th><th>Нужно на курс</th><th class="num">Ориентир, ₸</th></tr>
+  <tr><td>Генферон Лайт 250 000 МЕ №10</td><td>~2 950 ₸</td><td>~38 свечей → 4 уп</td><td class="num">~11 800</td></tr>
+  <tr><td>Отофаг-гель 50 мл</td><td>~7 500 ₸</td><td>1–2 тубы</td><td class="num">~7 500–15 000</td></tr>
+  <tr><td>Фагодент-гель 50 мл</td><td>~7 000 ₸</td><td>1 туба</td><td class="num">~7 000</td></tr>
+  <tr><td>Программа «Паразитов нет» (Аврора, набор 6 продуктов)</td><td>36 160 ₸</td><td>1 набор</td><td class="num">~36 160</td></tr>
+  <tr><td>Программа «Дефицитов нет» (Аврора)</td><td>у администратора</td><td>3 мес</td><td class="num">~30 000–60 000*</td></tr>
+  <tr><td>Мио-Инозитол (Инозитол Аврора)</td><td>8 800 ₸</td><td>~2–3 уп</td><td class="num">~17 600–26 400</td></tr>
+  <tr><td>Глиалия 700+70, таб. №60</td><td>~40 000 ₸</td><td>180 таб → 3 уп</td><td class="num">~120 000</td></tr>
+  <tr><td>ГАМК Solgar 500 мг, 100 капс</td><td>~9 900 ₸</td><td>180 капс → 2 уп</td><td class="num">~19 800</td></tr>
+  <tr><td>Карнитин Аврора (Карнитин Оранж 100 мл)</td><td>~8 000 ₸</td><td>зависит от дозы*</td><td class="num">~24 000–72 000*</td></tr>
+  <tr><td>Магний Плюс (Mg Plus Аврора, 30 порций)</td><td>~6 400 ₸</td><td>90 порций → 3 уп</td><td class="num">~19 200</td></tr>
+  <tr><td>В-комплекс (Витамины группы В Аврора)</td><td>~4 800 ₸</td><td>~3 уп</td><td class="num">~14 400</td></tr>
+  <tr><td><b>Итого за 4 месяца (ориентировочно)</b></td><td></td><td></td><td class="num"><b>~300 000–400 000</b></td></tr>
+</table>
+<div class="dis">* Уточнить у администратора центра / по точной дозировке: цена программы «Дефицитов нет», расход «Карнитина Аврора» (объём порции), точные дозы Мио-Инозитола и В-комплекса. Цены в аптеках/магазинах Алматы различаются (Генферон 2 890–3 045 ₸; Отофаг 7 100–9 500 ₸; Фагодент 6 300–11 000 ₸; Глиалия №60 33 500–45 000 ₸; GABA Solgar 100 капс ~9 900 ₸). Глиалия — самая дорогая позиция (~120 000 ₸ за курс).</div>
+
+<div class="foot">Информационная страница: перенос назначенного плана и ориентировочный расчёт стоимости. Не диагноз и не назначение — дозы, состав и решения определяет лечащий врач.</div>
+
+</main>
+</body></html>

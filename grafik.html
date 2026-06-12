@@ -13,10 +13,12 @@
  .navinner a.active{color:#fff;font-weight:600;border-bottom-color:#4da3ff;background:#2c3845;}
  .container{max-width:900px;margin:0 auto;padding:22px 18px 70px;}
  h1{font-size:24px;border-bottom:2px solid #2b2b2b;padding-bottom:6px;margin:6px 0 14px;}
+ h2{font-size:17px;margin-top:1.4em;border-bottom:1px solid #ddd;padding-bottom:3px;}
+ table{border-collapse:collapse;width:100%;margin:.7em 0;font-size:13px;background:#fff;}
+ th,td{border:1px solid #cfd6dd;padding:6px 9px;text-align:left;vertical-align:top;}
+ th{background:#eef0f2;}
  a{color:#0a7d3c;}
- .sub{color:#6b7785;font-size:14px;margin:2px 0 20px;}
- .note{background:#fff;border-radius:12px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08);font-size:14px}
- .note .tag{display:inline-block;background:#eef0f2;color:#515b68;font-size:11px;text-transform:uppercase;letter-spacing:.3px;padding:3px 8px;border-radius:20px;margin-bottom:8px}
+ .sub{color:#6b7785;font-size:14px;margin:2px 0 16px;}
  .foot{margin-top:16px;font-size:11.5px;color:#8a94a0}
 </style>
 </head><body>
@@ -38,13 +40,28 @@
 document.querySelectorAll('.navinner a').forEach(function(a){var h=(a.getAttribute('href')||'').replace(/\.html$/,'').replace(/^\.?\//,'').replace(/\/$/,'');if(h===''||h==='index')h='__home';if(h===seg)a.classList.add('active');});})();
 </script>
 
-<h1>График приёма — как пить — Афина</h1>
-<div class="sub">Как совместить назначения по времени, чтобы они не мешали друг другу.</div>
+<h1>График приёма — Афина</h1>
+<div class="sub">Расписание по этапам и времени суток. Полный список и стоимость — на странице <a href="lekarstva">Лекарства</a>. Последовательность и точные часы согласует лечащий врач.</div>
 
-<div class="note">
-  <span class="tag">Пока пусто</span>
-  <p>Принимать пока нечего — назначений нет. Раздел появится при старте лечения и поможет разложить приёмы по времени (натощак / с едой / до еды и т.д.).</p>
-</div>
+<h2>Этап 1 — месяц 1</h2>
+<table>
+  <tr><th>Когда</th><th>Что</th></tr>
+  <tr><td>Утро и вечер</td><td><b>Генферон Лайт</b> — дни 1–10 ежедневно (утро + вечер); дни 11–31 — только Пн / Ср / Пт (утро + вечер)</td></tr>
+  <tr><td>3 раза в день</td><td><b>Отофаг-гель</b> — в носовые ходы; <b>Фагодент-гель</b> — в ротоглотку</td></tr>
+  <tr><td>21 день</td><td><b>Программа «Паразитов нет»</b> — по схеме программы (у администратора)</td></tr>
+</table>
 
-<div class="foot">Информационная страница. Не диагноз. Решения — лечащий врач.</div>
-</main></body></html>
+<h2>Этап 2 — месяцы 2–4 (день по часам)</h2>
+<table>
+  <tr><th>Время</th><th>Что принять</th></tr>
+  <tr><td><b>Утро (натощак / с завтраком)</b></td><td>Мио-Инозитол Аврора · <b>Глиалия</b> 1 таб. с завтраком · Карнитин Аврора 1 ч. ложка · В-комплекс · <b>ГАМК (GABA)</b> 500 мг</td></tr>
+  <tr><td><b>День / с едой</b></td><td>Программа «Дефицитов нет» — по схеме программы</td></tr>
+  <tr><td><b>Вечер (с ужином)</b></td><td><b>Глиалия</b> 1 таб. с ужином · Карнитин Аврора 1 ч. ложка · <b>ГАМК (GABA)</b> 500 мг</td></tr>
+  <tr><td><b>Перед сном</b></td><td><b>Магний Плюс</b> — 1 мерная ложка в стакане воды</td></tr>
+</table>
+<p style="font-size:13px;color:#6b7785">Суточно: ГАМК 1000 мг (500+500), Глиалия 2 таб. (утро+вечер), Карнитин 2 ч. ложки (утро+вечер).</p>
+
+<div class="foot">Информационная страница: перенос назначенной схемы. Точный тайминг, последовательность этапов и дозы определяет лечащий врач.</div>
+
+</main>
+</body></html>

@@ -13,10 +13,11 @@
  .navinner a.active{color:#fff;font-weight:600;border-bottom-color:#4da3ff;background:#2c3845;}
  .container{max-width:900px;margin:0 auto;padding:22px 18px 70px;}
  h1{font-size:24px;border-bottom:2px solid #2b2b2b;padding-bottom:6px;margin:6px 0 14px;}
+ h2{font-size:17px;margin-top:1.4em;border-bottom:1px solid #ddd;padding-bottom:3px;}
  a{color:#0a7d3c;}
- .sub{color:#6b7785;font-size:14px;margin:2px 0 20px;}
- .note{background:#fff;border-radius:12px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08);font-size:14px}
- .note .tag{display:inline-block;background:#eef0f2;color:#515b68;font-size:11px;text-transform:uppercase;letter-spacing:.3px;padding:3px 8px;border-radius:20px;margin-bottom:8px}
+ ul{padding-left:1.4em}
+ .sub{color:#6b7785;font-size:14px;margin:2px 0 16px;}
+ .note{background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);font-size:14px;margin:1em 0}
  .foot{margin-top:16px;font-size:11.5px;color:#8a94a0}
 </style>
 </head><body>
@@ -38,14 +39,22 @@
 document.querySelectorAll('.navinner a').forEach(function(a){var h=(a.getAttribute('href')||'').replace(/\.html$/,'').replace(/^\.?\//,'').replace(/\/$/,'');if(h===''||h==='index')h='__home';if(h===seg)a.classList.add('active');});})();
 </script>
 
-<h1>Рекомендации врачей — Афина</h1>
-<div class="sub">Что назначили и рекомендовали на приёмах. Новые записи сверху.</div>
+<h1>Рекомендации — Афина</h1>
+<div class="sub">Назначен план биомедицинской коррекции на 4 месяца (центр Вожаков / A-Medical).</div>
 
 <div class="note">
-  <span class="tag">Пока пусто</span>
-  <p>Формальных врачебных назначений в присланных документах нет.</p>
-  <p>Рекомендуемый маршрут обследования (детский невролог, логопед, проверка слуха, щитовидная железа, генетик) — в <a href="nezavisimyy">Разборе лечения</a> и на <a href="./">Дашборде</a>. Раздел заполнится после очных приёмов.</p>
+  <p><b>Цель программы:</b> уменьшение активности хронического нейровоспаления, снижение инфекционной и токсической нагрузки, восстановление оси «кишечник–мозг», коррекция дефицитов, улучшение нейропластичности и баланса возбуждения/торможения в ЦНС.</p>
+  <p><b>Структура:</b></p>
+  <ul>
+    <li><b>Этап 1 (1 месяц)</b> — противовирусная, противомикробная и подготовительная терапия: Генферон Лайт, Отофаг-гель, Фагодент-гель, программа «Паразитов нет».</li>
+    <li><b>Этап 2 (3 месяца)</b> — восстановительная программа «Дефицитов нет» + Мио-Инозитол, Глиалия, ГАМК (GABA), Карнитин, Магний Плюс, В-комплекс.</li>
+  </ul>
+  <p><b>Динамическое сопровождение:</b> мама в контакте с администратором; по ходу возможна корректировка состава, сроков и последовательности. Контроль — по самочувствию и контрольным анализам после курса.</p>
 </div>
 
-<div class="foot">Информационная страница. Не диагноз. Решения — лечащий врач.</div>
-</main></body></html>
+<p>Полный список препаратов, дозы и <b>ориентировочная стоимость в Алматы</b> — на странице <a href="lekarstva">Лекарства</a>. Расписание по времени — <a href="grafik">График приёма</a>.</p>
+
+<div class="foot">Информационная страница: перенос назначенного плана. Не диагноз и не назначение — дозы, состав и решения определяет лечащий врач.</div>
+
+</main>
+</body></html>
